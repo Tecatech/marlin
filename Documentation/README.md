@@ -14,7 +14,7 @@ $ sudo apt install git-core gnupg flex bison build-essential zip curl zlib1g-dev
 
 ```bash
 $ mkdir -p ~/bin
-$ PATH="${HOME}/.bin:${PATH}"
+$ PATH="${HOME}/bin:${PATH}"
 ```
 
 ### Download the Repo Launcher and ensure that it's executable:
