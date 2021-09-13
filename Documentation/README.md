@@ -59,7 +59,7 @@ $ git config --global user.email "hexdump1337@gmail.com"
 $ repo init -u https://android.googlesource.com/platform/manifest
 ```
 
-#### To check out the `Pixel` branch:
+#### To check out the `sailfish` branch:
 
 ```bash
 $ repo init -u https://android.googlesource.com/platform/manifest -b android-10.0.0_r17
@@ -124,7 +124,7 @@ $ source build/envsetup.sh
 
 ### Choosing a target
 
-#### Choose the `sailfish` target to build:
+#### Choose the `sailfish` target to build with `lunch`:
 
 ```bash
 $ lunch aosp_sailfish-userdebug
