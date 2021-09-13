@@ -97,8 +97,8 @@ $ wget https://dl.google.com/dl/android/aosp/qcom-sailfish-qp1a.191005.007.a3-19
 #### Extract proprietary binaries
 
 ```bash
-$ tar xvf google_devices-sailfish-opm4.171019.016.b1-839e6b26.tgz
-$ tar xvf qcom-sailfish-opm4.171019.016.b1-3c7f92b3.tgz
+$ tar xvf google_devices-sailfish-qp1a.191005.007.a3-a1615a0f.tgz
+$ tar xvf qcom-sailfish-qp1a.191005.007.a3-191228fe.tgz
 ```
 
 ```bash
