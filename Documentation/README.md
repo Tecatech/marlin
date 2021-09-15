@@ -163,3 +163,23 @@ $ repo sync -c -j$(nproc)
 ```bash
 $ build/build.sh
 ```
+
+#### If you get a "`python: can't open file 'build/buildinfo/buildinfo.py': [Errno 2] No such file or directory`" error message, use the following solution:
+
+```bash
+$ vim build.config
+```
+
+```bash
+diff --git a/build.config b/build.config
+index 31533fb9..81caf05d 100644
+--- a/build.config
++++ b/build.config
+@@ -1,5 +1,4 @@
+
+ KERNEL_DIR=private/msm-google
+ . ${ROOT_DIR}/${KERNEL_DIR}/build.config.common
+ POST_DEFCONFIG_CMDS="check_defconfig && compression_tool_and_files lz4"
+-EXTRA_CMDS='python build/buildinfo/buildinfo.py'
+ STOP_SHIP_TRACEPRINTK=1
+```
