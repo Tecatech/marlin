@@ -112,32 +112,6 @@ $ ./extract-qcom-sailfish.sh
 $ make clobber
 ```
 
-## Building Android
-
-### Setting up the environment
-
-#### Initialize the environment with the `envsetup.sh` script:
-
-```bash
-$ source build/envsetup.sh
-```
-
-### Choosing a target
-
-#### Choose the `sailfish` target to build with `lunch`:
-
-```bash
-$ lunch aosp_sailfish-userdebug
-```
-
-### Building the code
-
-#### Build everything with `m`:
-
-```bash
-$ m
-```
-
 ## Building Kernels
 
 ### Downloading sources and build tools
@@ -184,4 +158,36 @@ index 31533fb9..81caf05d 100644
  POST_DEFCONFIG_CMDS="check_defconfig && compression_tool_and_files lz4"
 -EXTRA_CMDS='python build/buildinfo/buildinfo.py'
  STOP_SHIP_TRACEPRINTK=1
+```
+
+## Building Android
+
+### Setting up the environment
+
+#### After you have built the kernel image, copy the result over into AOSP's `device/google/marlin-kernel` directory, with:
+
+```bash
+cp ${kernel}/out/android-msm-marlin-3.18/dist/Image.lz4-dtb device/google/marlin-kernel
+```
+
+#### Initialize the environment with the `envsetup.sh` script:
+
+```bash
+$ source build/envsetup.sh
+```
+
+### Choosing a target
+
+#### Choose the `sailfish` target to build with `lunch`:
+
+```bash
+$ lunch aosp_sailfish-userdebug
+```
+
+### Building the code
+
+#### Build everything with `m`:
+
+```bash
+$ m
 ```
