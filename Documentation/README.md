@@ -170,6 +170,8 @@ $ build/build.sh
 $ vim build.config
 ```
 
+##### The adjustments to be made can be summarized as follows through a `git diff` result:
+
 ```patch
 diff --git a/build.config b/build.config
 index 31533fb9..81caf05d 100644
