@@ -167,7 +167,7 @@ index 31533fb9..81caf05d 100644
 #### After you have built the kernel image, copy the result over into AOSP's `device/google/marlin-kernel` directory, with:
 
 ```bash
-$ cp ${kernel}/out/android-msm-marlin-3.18/dist/Image.lz4-dtb device/google/marlin-kernel
+$ cp kernel/out/android-msm-marlin-3.18/dist/Image.lz4-dtb device/google/marlin-kernel
 ```
 
 #### Initialize the environment with the `envsetup.sh` script:
